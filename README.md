@@ -7,11 +7,11 @@ namespace GuessTheNumber
         static void Main(string[] args)
         {
             Random random = new Random();
-            int randomNumber = random.Next(1, 101); // Random number between 1 and 100
-            int guess = 0;
-
+            int randomNumber = random.Next(1, 101);
             Console.WriteLine("Welcome to Guess the Number!");
             Console.WriteLine("I have chosen a number between 1 and 100. Can you guess it?");
+            
+            int guess = 0;
 
             while (guess != randomNumber)
             {
